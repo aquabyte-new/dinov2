@@ -1,6 +1,6 @@
-# Aquabyte fork of [facebookreseaerch/dinov2](https://github.com/facebookresearch/dinov2)
+# Aquabyte fork of [facebookresearch/dinov2](https://github.com/facebookresearch/dinov2)
 > [!Note]
-> This fork was created to maintain support for Python 3.8. Newer commits to the repo add type annotations unsupported by older python versions and it breaks `torch.hub.load`. Use this fork to keep a working hub load by running
+> This fork was created to maintain support for Python 3.8. Newer commits to the repo add type annotations unsupported by older python versions and it breaks `torch.hub.load` on Python 3.8. Use this fork to leverage a safe Git tag for older python support.
 > 
 > ```python
 > import torch
