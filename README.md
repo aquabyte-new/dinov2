@@ -1,3 +1,23 @@
+# Aquabyte fork of [facebookreseaerch/dinov2](https://github.com/facebookresearch/dinov2)
+> [!Note]
+> This fork was created to maintain support for Python 3.8. Newer commits to the repo add type annotations unsupported by older python versions and it breaks `torch.hub.load`. Use this fork to keep a working hub load by running
+> 
+> ```python
+> import torch
+>
+> # DinoV2
+> model = torch.hub.load("aquabyte-new/dinov2:python3.8", model="dinov2_vits14")
+> model = torch.hub.load("aquabyte-new/dinov2:python3.8", model="dinov2_vitb14")
+> ...
+>
+> # DinoV2 with registers
+> model = hub.load("aquabyte-new/dinov2:python3.8", model="dinov2_vits14_reg")
+> model = hub.load("aquabyte-new/dinov2:python3.8", model="dinov2_vitb14_reg")
+> ...
+> ```
+
+---
+
 :new: [2025-08-14] *Please check out the more recent [DINOv3](https://github.com/facebookresearch/dinov3) effort continuing this line of work.*
 
 [2025-06-11] *Added dino.txt inference code, following [DINOv2 Meets Text: A Unified Framework for Image- and Pixel-Level Vision-Language Alignment](https://arxiv.org/abs/2412.16334).*
